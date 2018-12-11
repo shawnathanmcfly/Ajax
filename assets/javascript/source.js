@@ -66,9 +66,13 @@ function gifSearch( entry ){
 function loadData(){
 
     let getMemory = localStorage.getItem( "memory");
-    memory = getMemory.split(',');
-    localStorage.clear();
-    console.log( memory );
+
+    if( getMemory != null ){
+
+        memory = getMemory.split(',');
+        localStorage.clear();
+        console.log( memory );
+    }
 
 }
 
