@@ -67,7 +67,7 @@ function loadData(){
 
     let getMemory = localStorage.getItem( "memory");
 
-    if( getMemory != null ){
+    if( getMemory ){
 
         memory = getMemory.split(',');
         localStorage.clear();
