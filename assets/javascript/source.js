@@ -41,7 +41,7 @@ function histRefresh(){
 function gifSearch( entry ){
 
     let t = entry.replace(/ /g, '+');
-    let urlQuery = "https://api.giphy.com/v1/gifs/search?q=" + t + "&api_key=" + api + "&limit=10";
+    let urlQuery = "http://api.giphy.com/v1/gifs/search?q=" + t + "&api_key=" + api + "&limit=10";
     
     $.ajax({ url: urlQuery, method: "GET"}).then(function(callBack){
 
